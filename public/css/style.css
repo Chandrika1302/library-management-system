@@ -72,11 +72,11 @@ nav{
     justify-content: space-between;
 } */
 .exp{
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     width:50%;
     margin:auto;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 main{
     display: flex;
@@ -86,7 +86,7 @@ main{
     margin:0;
     padding-top: 1rem;
     flex-direction: column;
-    border-right: 1px solid black;
+    /* border-right: 1px solid black; */
     gap:1rem;
     min-height: 90vh;
 }
@@ -95,12 +95,19 @@ main{
     margin-right:30px ;
     width: 100%;
 }
-
-.main-component{
-    padding-top: 1rem;
-    font-size: 2rem;
+.exp1{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
 }
 
+/* .main-component{
+    padding-top: 1rem;
+    font-size: 2rem;
+} */
+/* 
 .button{
     display: block;
     text-decoration: none;
@@ -115,4 +122,4 @@ main{
 }
 .button:visited{
     text-emphasis: none;
-} 
+}  */

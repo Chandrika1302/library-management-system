@@ -7,7 +7,6 @@
 <div>
     <div class="text-5xl text-center py-12 font-extrabold text-transparent bg-clip-text bg-gradient-to-b
         via-slate-700 t o-slate-800">Books</div>
-
     <div>
         <ul class="exp flex flex-col justify-center mb-10">
             @foreach ($books as $book)
