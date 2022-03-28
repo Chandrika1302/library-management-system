@@ -4,31 +4,38 @@
 
 
 @if (count($books)>0)
-    <div class="main-component">
-    Books:
-        <ul>
-        @foreach ($books as $book)
-            <li>
-                <a href='/book?id={{$book["id"]}}'>{{$book["name"]}}</a>
-                <div>
-                {{ $book["description"] }}
+<div>
+    <div class="text-5xl text-center py-12 font-extrabold text-transparent bg-clip-text bg-gradient-to-b
+        via-slate-700 t o-slate-800">Books</div>
+
+    <div>
+        <ul class="exp flex flex-col justify-center mb-10">
+            @foreach ($books as $book)
+            <li class=" m-2 rounded-md bg-opacity-50 bg-white backdrop-blur-md shadow-xl text-xl p-4 font-sans
+            font-medium">
+                <a href='/book?id={{$book["id"]}}'
+                    class="shadow-xl rounded-md bg-opacity-50 backdrop-blur-md p-2 font-bold bg-white rounded-md">Name:
+                    {{$book["name"]}}</a>
+                <div class="mt-2">
+                    Description:
+                    {{ $book["description"] }}
                 </div>
                 <div>
-                    author:
-                {{ $book["author"] }}
+                    Author:
+                    {{ $book["author"] }}
                 </div>
                 <div>
                     Year:
-                {{ $book["year"] }}
+                    {{ $book["year"] }}
                 </div>
             </li>
-        @endforeach
+            @endforeach
         </ul>
     </div>
 
-@else
-<h2 class="error">No Books found</h2>
-@endif
+    @else
+    <h2 class="text-center text-3xl mt-6 font-bold">No Books found</h2>
+    @endif
 
 
-@stop
+    @stop
