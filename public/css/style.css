@@ -1,19 +1,20 @@
-* {
+/* * {
     text-shadow: 0 0 1px black, 1px 1px 2px white;
-}
+} */
 
-body {
+/* body {
     /* background-image: url(./bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     background-blend-mode: screen;
     background-size: cover; */
-    text-align: center;
+    /* text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: hsl(240, 0%, 90%);
-}
-.welcome {
+}  */
+
+/* .welcome {
     margin-top: 3rem;
 }
 .login-links {
@@ -29,8 +30,8 @@ body {
     text-decoration: none;
     box-shadow: 1px 1px 3px 0 black;
     background-color: hsl(120, 50%, 60%);
-}
-.login-links a:hover {
+} */
+/* .login-links a:hover {
     transform: scale(1.05);
 }
 
@@ -61,14 +62,21 @@ input[type="submit"]:hover{
 }
 .error{
     color:red;
-}
-header{
+} */
+/* header{
     border-bottom: 1px solid black;
 }
 nav{
     margin:1rem 2rem;
     display: flex;
     justify-content: space-between;
+} */
+.exp{
+    display: flex;
+    justify-content: center;
+    width:50%;
+    margin:auto;
+    flex-direction: column;
 }
 main{
     display: flex;
@@ -78,25 +86,21 @@ main{
     margin:0;
     padding-top: 1rem;
     flex-direction: column;
-    text-align: left;
     border-right: 1px solid black;
-    margin-right: 5px;
-    padding-right: 5px;
     gap:1rem;
-    font-size: 1.5rem;
-    flex-shrink: 0;
     min-height: 90vh;
 }
 .app{
-    text-align: left;
+    text-align: center;
+    margin-right:30px ;
+    width: 100%;
 }
+
 .main-component{
     padding-top: 1rem;
     font-size: 2rem;
 }
-li{
-    font-size: 1.2rem;
-}
+
 .button{
     display: block;
     text-decoration: none;
@@ -111,4 +115,4 @@ li{
 }
 .button:visited{
     text-emphasis: none;
-}
+} 
