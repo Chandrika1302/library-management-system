@@ -15,11 +15,11 @@
         class="m-10 rounded-md bg-opacity-50 bg-white backdrop-blur-md shadow-xl grid grid-cols-2 justify-items-center p-4 font-sans font-medium">
         <div class="shadow-xl rounded-md bg-opacity-50 backdrop-blur-md text-4xl p-4 font-bold mr-80 rounded-md">Library
         </div>
-        <div class="flex flex-end gap-10 text-3xl">
+        <div class="flex flex-end gap-10 text-2xl ml-36">
             <a href="/register"
-                class="shadow-xl rounded-md bg-opacity-50 backdrop-blur-md p-4 cursor-pointer transform hover:scale-110 active:scale-90 duration-100">Register</a>
+                class="shadow-xl rounded-md bg-opacity-50 backdrop-blur-md px-4 pt-5 cursor-pointer transform hover:scale-110 active:scale-90 duration-100">Register</a>
             <a href="/login"
-                class="shadow-xl  rounded-md bg-opacity-50 backdrop-blur-md p-4 cursor-pointer transform hover:scale-110 active:scale-90 duration-100">Login</a>
+                class="shadow-xl  rounded-md bg-opacity-50 backdrop-blur-md px-4 pt-5 cursor-pointer transform hover:scale-110 active:scale-90 duration-100">Login</a>
         </div>
     </div>
     <h2
