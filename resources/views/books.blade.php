@@ -11,20 +11,20 @@
         <ul class="exp flex flex-col justify-center mb-10">
             @foreach ($books as $book)
             <li class=" m-2 rounded-md bg-opacity-50 bg-white backdrop-blur-md shadow-xl text-xl p-4 font-sans
-            font-medium">
+            ">
                 <a href='/book?id={{$book["id"]}}'
                     class="shadow-xl rounded-md bg-opacity-50 backdrop-blur-md p-2 font-bold bg-white rounded-md">Name:
                     {{$book["name"]}}</a>
                 <div class="mt-2">
-                    Description:
+                    <div class="font-medium inline">Description:</div>
                     {{ $book["description"] }}
                 </div>
                 <div>
-                    Author:
+                    <div class="font-medium inline"> Author:</div>
                     {{ $book["author"] }}
                 </div>
                 <div>
-                    Year:
+                    <div class="font-medium inline">Year:</div>
                     {{ $book["year"] }}
                 </div>
             </li>

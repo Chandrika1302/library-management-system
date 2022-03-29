@@ -1,22 +1,20 @@
 @extends('layouts.base')
 
 @section('content')
-<div class="m-10 rounded-md bg-opacity-50 bg-white backdrop-blur-md shadow-xl text-2xl p-4 font-sans font-medium ">
-    <h3>
+<div class="m-10 rounded-md bg-opacity-50 bg-white backdrop-blur-md shadow-xl text-2xl p-4 font-sans ">
+    <h3 class="m-2 font-medium">
         Book Name:
         {{$book->name}}
     </h3>
     <p>
-        Description:
-        {{$book->description}}
+    <div class="font-medium inline">Description:</div>
+    {{$book->description}}
 
     </p>
     <p>
-        Year:
-        {{$book->year}}
-
-    </p>
-    <p>
+    <div class="font-medium inline">Year:</div>
+    {{$book->year}} </p>
+    <p class="mt-2 font-medium">
         Author:
         {{$book->author}}
 

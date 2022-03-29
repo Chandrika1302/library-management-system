@@ -4,15 +4,19 @@
 
 @if(!isset($book))
 <form method="POST"
-    class="exp mt-52 flex flex-col justify-center rounded-md bg-opacity-50 bg-white backdrop-blur-md shadow-xl text-xl p-12 font-sans font-medium w-1/2">
+    class="exp mt-48 flex flex-col justify-center rounded-md bg-opacity-50 bg-white backdrop-blur-md shadow-xl text-xl p-12 font-sans font-medium w-1/2">
     @csrf
-    <label for="name" class="text-left text-xl">Name</label>
+    <label for="name" class="text-left text-2xl">Name</label>
     <input class="shadow-xl block rounded-md w-full p-2 mb-4" type="text" name="name" placeholder="Name">
-    <label for="description" class="text-left text-xl">Description</label>
-    <input class="shadow-xl block rounded-md w-full p-2 mb-4" type="text" name="description" placeholder="Description">
-    <label for="year" class="text-left text-xl">Year</label>
+
+    <label for="description" class="text-left text-2xl">Description</label>
+    <textarea class="shadow-xl block rounded-md w-full p-2 mb-4" type="text" name="description"
+        placeholder="Description"></textarea>
+
+    <label for="year" class="text-left text-2xl">Year</label>
     <input class="shadow-xl block rounded-md w-full p-2 mb-4" type="number" name="year" placeholder="Year">
-    <br>
+
+    <label for="author" class="text-left text-2xl">Select Author</label>
     <select name="author" class="shadow-xl block rounded-md w-full p-2 mb-4">
         @foreach ($authors as $author)
         <option value='{{$author["name"]}}'>
@@ -38,7 +42,7 @@
     <label for="year" class="text-left text-xl">Year</label>
     <input class="shadow-xl block rounded-md w-full p-2 mb-4" type="number" name="year" placeholder="Year"
         value="{{$book->year}}">
-    <label for="author" class="text-left text-xl">Author</label>
+    <label for="author" class="text-left text-xl">Select Author</label>
     <select name="author" value="{{$book->author}}" class="shadow-xl block rounded-md w-full p-2 mb-4 bg-white">
         @foreach ($authors as $author)
         @if ($author->name==$book->author)

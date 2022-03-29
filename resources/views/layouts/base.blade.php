@@ -39,15 +39,15 @@
             </li>
             <li
                 class="shadow-xl rounded-md bg-opacity-50 backdrop-blur-md p-4 cursor-pointer transform hover:scale-110 active:scale-90 duration-100">
-                <a href="/about">About</a>
-            </li>
-            <li
-                class="shadow-xl rounded-md bg-opacity-50 backdrop-blur-md p-4 cursor-pointer transform hover:scale-110 active:scale-90 duration-100">
                 <a href="/author/create">Add new Author</a>
             </li>
             <li
                 class="shadow-xl rounded-md bg-opacity-50 backdrop-blur-md p-4 cursor-pointer transform hover:scale-110 active:scale-90 duration-100 ">
                 <a href="/book/create">Add new Book</a>
+            </li>
+            <li
+                class="shadow-xl rounded-md bg-opacity-50 backdrop-blur-md p-4 cursor-pointer transform hover:scale-110 active:scale-90 duration-100">
+                <a href="/about">About</a>
             </li>
         </ul>
         <div class="app">

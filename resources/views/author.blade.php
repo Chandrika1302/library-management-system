@@ -1,16 +1,16 @@
 @extends('layouts.base')
 
 @section('content')
-<div>
+<div class="my-6">
     <h2
         class="text-5xl text-center py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-b via-slate-700 to-slate-800">
         Author:
         {{$author->name}}
     </h2>
 
-    <!-- <p>Description:
+    <p class="text-xl my-2">Description:
         {{$author->description}}
-    </p> -->
+    </p>
 
     @isset($error)
     <div class="text-center text-3xl mt-6 font-bold">
