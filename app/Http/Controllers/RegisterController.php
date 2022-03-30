@@ -27,7 +27,6 @@ class RegisterController extends Controller
 
     private function insert($username,$password) {
         $user = new User;
-    
         $user->username =$username;
         $user->password =$password;
     
@@ -35,4 +34,3 @@ class RegisterController extends Controller
     
     }
 }
-

@@ -1,10 +1,7 @@
 <?php
-
 namespace App\Http\Middleware;
-
 use Closure;
 use Illuminate\Http\Request;
-
 class CheckUserStatus
 {
     /**
@@ -20,12 +17,11 @@ class CheckUserStatus
         if ($path == "/" || $path == "/login" || $path == "/register") {
             return $next($request);
         }
-
         if (session()->has('user')) {
             return $next($request);
-
         }
         return redirect('/login');
 
     }
 }
+// hi
